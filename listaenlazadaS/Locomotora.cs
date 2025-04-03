@@ -47,6 +47,31 @@ namespace listaenlazadaS
                 tmp.Sig = nuevo;
             }
         }
+        public void EliminaUltimo()
+        {
+            if (this.Primero == null)
+            {
+                return;
+            }
+            if (this.Primero.Sig == null)
+            {
+                this.Primero = null;
+                return;
+            }
+            Vagon tmp = this.Primero;
+            while (tmp.Sig.Sig != null)
+            {
+                tmp = tmp.Sig;
+            }
+            tmp.Sig = null;
+
+
+        }
+
+        public bool ExisteValor(int valor)
+        {
+            return true;
+        }
         public string VerVagones()
         {
             string listaVag = "";
