@@ -70,6 +70,15 @@ namespace listaenlazadaS
 
         public bool ExisteValor(int valor)
         {
+            Vagon tmp = this.Primero;
+            while (tmp != null)
+            {
+                if (tmp.Dato == valor)
+                {
+                    return true;
+                }
+                tmp = tmp.Sig;
+            }
             return true;
         }
         public string VerVagones()
