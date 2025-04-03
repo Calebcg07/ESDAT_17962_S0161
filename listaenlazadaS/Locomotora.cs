@@ -67,7 +67,23 @@ namespace listaenlazadaS
 
 
         }
+        public int Largo()
+        {
+            return 0;
+        }
 
+        public int GetValor(int pos)
+        {
+            return 0;
+        }
+        public void AgregaLEFinal(Locomotora otro)
+        {
+
+        }
+        public void Ordena()
+        {
+
+        }
         public bool ExisteValor(int valor)
         {
             Vagon tmp = this.Primero;
